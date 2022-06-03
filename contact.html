@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/css/uikit.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script> -->
+</head>
+
+<body>
+
+    <header class="Header uk-container uk-container-expand uk-background-secondary">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">Название</a>
+            </div>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li>
+                        <a href="#">Каталог</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m"><button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                    type="button" uk-toggle="target: #offcanvas-flip"></div>
+        </nav>
+    </header>
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">О нас</a></li>
+                <li class="uk-parent">
+                    <a href="#">Каталог</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+                <div class="uk-h3 uk-margin-medium-top"><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></div>
+            </ul>
+
+        </div>
+    </div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-auto">
+                        <h2 class="uk-h3">Контакты
+                            <hr class="hr">
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div>
+                    <h1>Компания «Название»</h1>
+                    <ul class="uk-list uk-text-lead">
+                        <li>Россия,г. Пенза, ул. Уличная, 00</li>
+                        <li><span><a href="" class="uk-link-reset">+7 000 000-00-00</a></span></li>
+                        <li>Пт — Вс 00:00 — 00:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AEC102mAKxyGfkKlw-OM2EC2xSMfSezJQ&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="Footer uk-section uk-margin-large-top uk-background-secondary uk-light">
+        <div class="uk-container uk-text-center">
+            <div class="uk-h1 uk-margin-remove uk-text-uppercase">Название</div>
+            <div class="uk-h3 uk-margin-remove uk-padding">Пт — Вс 00:00 — 00:00</div>
+            <ul class="uk-subnav uk-margin-remove-top uk-flex-center" uk-margin>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 1</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 2</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 3</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 4</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Новая модель
+                        организационной</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Никто не вправе
+                        осуждать</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">О компании</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Контакты</a></li>
+            </ul>
+            <div class="uk-margin-large-top">© 2022 Компания «Название» <a class="uk-link-reset" href="">+7 000
+                    000-00-00</a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/css/uikit.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script> -->
+</head>
+
+<body>
+
+    <header class="Header uk-container uk-container-expand uk-background-secondary">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">Название</a>
+            </div>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li>
+                        <a href="#">Каталог</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m"><button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                    type="button" uk-toggle="target: #offcanvas-flip"></div>
+        </nav>
+    </header>
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">О нас</a></li>
+                <li class="uk-parent">
+                    <a href="#">Каталог</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+                <div class="uk-h3 uk-margin-medium-top"><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></div>
+            </ul>
+
+        </div>
+    </div>
+
+    <section class="uk-section uk-padding-remove-vertical">
+        <div class="uk-container uk-container-expand-right">
+            <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-padding uk-padding-remove-left">
+                        <h2 class="uk-h3 uk-margin-remove">Выбранный нами инновационный путь не позволил союзу
+                            развалиться!</h2>
+                        <div class="uk-padding uk-padding-remove-horizontal">Разнообразный и богатый опыт говорит нам,
+                            что граница обучения кадров предоставляет
+                            широкие возможности для своевременного выполнения сверхзадачи!</div>
+                        <a href="catalog.html"
+                            class="uk-button uk-button-large uk-button-primary uk-border-pill">Каталог товаров</a>
+                    </div>
+                </div>
+                <div class="uk-width-2-3 uk-visible@m">
+                    <img src="content/banner_vapp2.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
+                <a href="category.html">
+                    <div class="uk-inline uk-dark">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque"
+                                src="content/vapp-mini.webp" alt="">
+                            <div class="uk-overlay-primary uk-position-cover uk-border-rounded">
+                                <div class="uk-position-top-right uk-padding-small"><span
+                                        uk-icon="icon: chevron-right; ratio: 1.45"></span></div>
+                                <div class="uk-position-top uk-padding-small">
+                                    <h3 class="uk-h4 uk-margin-remove">Монтажные гвозди</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="category.html">
+                    <div class="uk-inline uk-dark">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque"
+                                src="content/ploshchadka_pod_stya.webp" alt="">
+                            <div class="uk-overlay-primary uk-position-cover uk-border-rounded">
+                                <div class="uk-position-top-right uk-padding-small"><span
+                                        uk-icon="icon: chevron-right; ratio: 1.45"></span></div>
+                                <div class="uk-position-top uk-padding-small">
+                                    <h3 class="uk-h4 uk-margin-remove">Расходные материалы</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="category.html">
+                    <div class="uk-inline uk-dark">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img class="uk-border-rounded uk-transition-scale-up uk-transition-opaque"
+                                src="content/HYBEST40a.webp" alt="">
+                            <div class="uk-overlay-primary uk-position-cover uk-border-rounded">
+                                <div class="uk-position-top-right uk-padding-small"><span
+                                        uk-icon="icon: chevron-right; ratio: 1.45"></span></div>
+                                <div class="uk-position-top uk-padding-small">
+                                    <h3 class="uk-h4 uk-margin-remove">Инструмент</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-auto">
+                        <h2 class="uk-h3">Усиленные и кованные гвозди
+                            <hr class="hr">
+                        </h2>
+                    </div>
+                </div>
+                <span>Использование в работе усиленных и кованных гвоздей для монтажного пистолета позволяет ускорить в
+                    2 раза монтаж натяжных потолков, проведение электропроводки или крепление теплоизоляции. Выбирая
+                    гвозди VAPP - Вы работаете напрямую с производителем - получая лучшую стоимость с НДС, на расходные
+                    материалы для монтажных пистолетов TOUA и HYBEST</span>
+            </div>
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-row-large uk-margin-large-top" uk-grid
+                uk-height-match="target: > a > .uk-card > .uk-card-body > div">
+                <a href="item.html" class="uk-link-reset">
+                    <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="content/vapp-mini.webp" alt="">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                    src="content/2020_0100134_06_2022.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div>
+                                <h4 class="uk-card-title uk-margin-small-bottom">Гвозди 00000</h4>
+                                <div>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</div>
+                                <div class="uk-padding-small">0000₽</div>
+                            </div>
+                            <button class="uk-button uk-button-primary uk-border-rounded">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="item.html" class="uk-link-reset">
+                    <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="content/vapp-mini.webp" alt="">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                    src="content/2020_0100134_06_2022.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div>
+                                <h4 class="uk-card-title uk-margin-small-bottom">Гвозди 00000</h4>
+                                <div>Lorem ipsum dolor</div>
+                                <div class="uk-padding-small">0000₽</div>
+                            </div>
+                            <button class="uk-button uk-button-primary uk-border-rounded">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="item.html" class="uk-link-reset">
+                    <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="content/vapp-mini.webp" alt="">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                    src="content/2020_0100134_06_2022.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div>
+                                <h4 class="uk-card-title uk-margin-small-bottom">Гвозди 00000</h4>
+                                <div>Lorem ipsum dolor</div>
+                                <div class="uk-padding-small">0000₽</div>
+                            </div>
+                            <button class="uk-button uk-button-primary uk-border-rounded">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="item.html" class="uk-link-reset">
+                    <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
+                        <div class="uk-card-media-top">
+                            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <img src="content/vapp-mini.webp" alt="">
+                                <img class="uk-transition-scale-up uk-position-cover"
+                                    src="content/2020_0100134_06_2022.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div>
+                                <h4 class="uk-card-title uk-margin-small-bottom">Гвозди 00000</h4>
+                                <div>Lorem ipsum dolor</div>
+                                <div class="uk-padding-small">0000₽</div>
+                            </div>
+                            <button class="uk-button uk-button-primary uk-border-rounded">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-padding uk-background-primary uk-light">
+                <div class="uk-child-width-1-3@s uk-grid-divider" uk-grid>
+                    <div>
+                        <div class="uk-panel">
+                            <h4>Подробности о категории</h4>
+                            <p>Разнообразный и богатый опыт говорит нам, что граница обучения кадров
+                                предоставляет широкие возможности для своевременного выполнения сверхзадачи! Значимость
+                                этих
+                                проблем настолько очевидна, что базовый вектор развития в значительной степени
+                                обусловливает
+                                важность кластеризации усилий. Картельные сговоры не допускают ситуации, при которой
+                                представители современных социальных резервов заблокированы в рамках своих собственных
+                                рациональных ограничений.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel">
+                            <h4>Подробности о категории</h4>
+                            <p>Разнообразный и богатый опыт говорит нам, что граница обучения кадров
+                                предоставляет широкие возможности для своевременного выполнения сверхзадачи! Значимость
+                                этих
+                                проблем настолько очевидна, что базовый вектор развития в значительной степени
+                                обусловливает
+                                важность кластеризации усилий. Картельные сговоры не допускают ситуации, при которой
+                                представители современных социальных резервов заблокированы в рамках своих собственных
+                                рациональных ограничений.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel">
+                            <h4>Подробности о категории</h4>
+                            <p>Разнообразный и богатый опыт говорит нам, что граница обучения кадров
+                                предоставляет широкие возможности для своевременного выполнения сверхзадачи! Значимость
+                                этих
+                                проблем настолько очевидна, что базовый вектор развития в значительной степени
+                                обусловливает
+                                важность кластеризации усилий. Картельные сговоры не допускают ситуации, при которой
+                                представители современных социальных резервов заблокированы в рамках своих собственных
+                                рациональных ограничений.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="uk-section uk-section-large">
+        <div class="uk-container">
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title uk-link-reset">Новая модель организационной деятельности показала себя
+                        во всей
+                        красе</a>
+                    <div class="uk-accordion-content">
+                        Таким образом, сложившаяся структура организации говорит о возможностях кластеризации усилий. Но
+                        сложившаяся структура организации требует анализа системы массового участия. В рамках
+                        спецификации современных стандартов, диаграммы связей функционально разнесены на независимые
+                        элементы.
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title uk-link-reset">Новая модель организационной деятельности показала себя
+                        во всей
+                        красе</a>
+                    <div class="uk-accordion-content">
+                        Таким образом, сложившаяся структура организации говорит о возможностях кластеризации усилий. Но
+                        сложившаяся структура организации требует анализа системы массового участия. В рамках
+                        спецификации современных стандартов, диаграммы связей функционально разнесены на независимые
+                        элементы.
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title uk-link-reset">Новая модель организационной деятельности показала себя
+                        во всей
+                        красе</a>
+                    <div class="uk-accordion-content">
+                        Таким образом, сложившаяся структура организации говорит о возможностях кластеризации усилий. Но
+                        сложившаяся структура организации требует анализа системы массового участия. В рамках
+                        спецификации современных стандартов, диаграммы связей функционально разнесены на независимые
+                        элементы.
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title uk-link-reset">Новая модель организационной деятельности показала себя
+                        во всей
+                        красе</a>
+                    <div class="uk-accordion-content">
+                        Таким образом, сложившаяся структура организации говорит о возможностях кластеризации усилий. Но
+                        сложившаяся структура организации требует анализа системы массового участия. В рамках
+                        спецификации современных стандартов, диаграммы связей функционально разнесены на независимые
+                        элементы.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="Footer uk-section uk-margin-large-top uk-background-secondary uk-light">
+        <div class="uk-container uk-text-center">
+            <div class="uk-h1 uk-margin-remove uk-text-uppercase">Название</div>
+            <div class="uk-h3 uk-margin-remove uk-padding">Пт — Вс 00:00 — 00:00</div>
+            <ul class="uk-subnav uk-margin-remove-top uk-flex-center" uk-margin>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 1</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 2</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 3</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 4</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Новая модель
+                        организационной</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Никто не вправе
+                        осуждать</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">О компании</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Контакты</a></li>
+            </ul>
+            <div class="uk-margin-large-top">© 2022 Компания «Название» <a class="uk-link-reset" href="">+7 000
+                    000-00-00</a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

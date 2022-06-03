@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/css/uikit.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script> -->
+</head>
+
+<body>
+
+    <header class="Header uk-container uk-container-expand uk-background-secondary">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">Название</a>
+            </div>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="about.html">О нас</a></li>
+                    <li>
+                        <a href="#">Каталог</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                                <li><a href="category.html">Категория</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m"><button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                    type="button" uk-toggle="target: #offcanvas-flip"></div>
+        </nav>
+    </header>
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">О нас</a></li>
+                <li class="uk-parent">
+                    <a href="#">Каталог</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                        <li><a href="category.html">Категория</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+                <div class="uk-h3 uk-margin-medium-top"><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></div>
+            </ul>
+
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .Header,
+        .Footer {
+            display: none;
+        }
+    </style>
+
+    <div class="uk-container uk-container-expand uk-padding-small">
+        <div uk-grid>
+            <div class="uk-width-expand"><a href="category.html" class="uk-link-reset"><span
+                        uk-icon="arrow-left"></span> В категорию товара</a></div>
+            <div class="uk-width-auto"><a href="category.html" class="uk-link-reset"
+                    uk-icon="icon: close; ratio: 2"></a></div>
+        </div>
+    </div>
+    <main class="uk-section uk-animation-slide-bottom">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@s uk-grid-large uk-flex-middle" uk-grid>
+                <div>
+                    <div id="slideshow" class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
+
+                        <ul class="uk-slideshow-items" uk-lightbox>
+                            <li>
+                                <a href="content/item/2020_0100070_06_2022.jpg"><img
+                                        src="content/item/2020_0100070_06_2022.jpg" alt="" uk-cover></a>
+                            </li>
+                            <li>
+                                <a href="content/item/2020_0100128_06_2022.jpg"><img
+                                        src="content/item/2020_0100128_06_2022.jpg" alt="" uk-cover></a>
+                            </li>
+                            <li>
+                                <a href="content/item/2020_0100120_06_2022.jpg"><img
+                                        src="content/item/2020_0100120_06_2022.jpg" alt="" uk-cover></a>
+                            </li>
+                            <li>
+                                <a href="content/item/gas_nail.jpg"><img src="content/item/gas_nail.jpg" alt=""
+                                        uk-cover></a>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                    <div class="uk-position-relative uk-visible-toggle uk-margin-small-top" tabindex="-1" uk-slider>
+
+                        <ul id="slider"
+                            class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                            <li uk-slideshow-item="0">
+                                <img src="content/item/2020_0100070_06_2022.jpg" alt="">
+                            </li>
+                            <li uk-slideshow-item="1">
+                                <img src="content/item/2020_0100128_06_2022.jpg" alt="">
+                            </li>
+                            <li uk-slideshow-item="2">
+                                <img src="content/item/2020_0100120_06_2022.jpg" alt="">
+                            </li>
+                            <li uk-slideshow-item="3">
+                                <img src="content/item/gas_nail.jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                            uk-slider-item="next"></a>
+
+                    </div>
+                </div>
+                <div>
+                    <h2 class="uk-margin-remove">Название товара</h2>
+                    <span class="uk-text-meta">Производитель</span>
+                    <div class="uk-padding-small uk-padding-remove-horizontal uk-text-large">000₽</div>
+                    <div class="uk-panel">
+                        <p>Наше дело не так однозначно, как может показаться: высокое качество позиционных исследований
+                            говорит о возможностях своевременного выполнения сверхзадачи. Но новая модель
+                            организационной
+                            деятельности однозначно фиксирует необходимость позиций, занимаемых участниками в отношении
+                            поставленных задач.</p>
+                        <p>Прежде всего, внедрение современных методик в значительной степени обусловливает важность как
+                            самодостаточных, так и внешне зависимых концептуальных решений. Также как выбранный нами
+                            инновационный путь предопределяет высокую востребованность переосмысления
+                            внешнеэкономических
+                            политик.</p>
+                    </div>
+                    <ul class="uk-list">
+                        <li><span>Материал:</span> Сталь CT-55</li>
+                        <li><span>Тип:</span> Усиленные</li>
+                        <li><span>Длинна гвоздя:</span> 16 мм</li>
+                        <li><span>Диаметр гвоздя:</span> 3 мм</li>
+                        <li><span>Количество в упаковке:</span> 1000 шт.</li>
+                        <li><span>Страна производитель:</span> Китай</li>
+                        <li><span>ДxШxВ:</span> 220x80x90 мм</li>
+                        <li><span>Вес:</span> 1100 г</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer uk-section uk-margin-large-top uk-background-secondary uk-light">
+        <div class="uk-container uk-text-center">
+            <div class="uk-h1 uk-margin-remove uk-text-uppercase">Название</div>
+            <div class="uk-h3 uk-margin-remove uk-padding">Пт — Вс 00:00 — 00:00</div>
+            <ul class="uk-subnav uk-margin-remove-top uk-flex-center" uk-margin>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 1</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 2</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 3</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Категория 4</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Новая модель
+                        организационной</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Никто не вправе
+                        осуждать</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">О компании</a></li>
+                <li><a class="uk-button uk-button-default uk-button-small uk-border-pill" href="">Контакты</a></li>
+            </ul>
+            <div class="uk-margin-large-top">© 2022 Компания «Название» <a class="uk-link-reset" href="">+7 000
+                    000-00-00</a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
