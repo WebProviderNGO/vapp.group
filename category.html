@@ -1,3 +1,5 @@
+<!-- Шаблон категории каталога -->
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -68,17 +70,20 @@
         <div class="uk-container">
             <div class="uk-text-center">
                 <ul class="uk-breadcrumb">
+                    <!-- Хлебные крошки под вопросом, генерирвоться должны через CMS -->
                     <li><a href="https://webproviderngo.github.io/vapp.group/">Главная</a></li>
                     <li><a href="catalog.html">Каталог товаров</a></li>
                     <li><span>Название категории</span></li>
                 </ul>
                 <div class="uk-flex-center" uk-grid>
                     <div class="uk-width-auto">
+                        <!-- Название категории -->
                         <h2 class="uk-h3">Название категории
                             <hr class="hr">
                         </h2>
                     </div>
                 </div>
+                <!-- Описание категории -->
                 <span>Для современного мира убеждённость некоторых оппонентов влечет за собой процесс внедрения и
                     модернизации поэтапного и последовательного развития общества. Каждый из нас понимает очевидную
                     вещь: высококачественный прототип будущего проекта создаёт предпосылки для распределения внутренних
@@ -91,6 +96,7 @@
         <div class="uk-container">
             <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-row-large uk-margin-large-top" uk-grid
                 uk-height-match="target: > a > .uk-card > .uk-card-body > div">
+                <!-- Вывести блоки товара категории по шаблону -->
                 <a href="item.html" class="uk-link-reset">
                     <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
                         <div class="uk-card-media-top">
@@ -102,14 +108,18 @@
                         </div>
                         <div class="uk-card-body">
                             <div>
+                                <!-- Название товара -->
                                 <h4 class="uk-card-title uk-margin-small-bottom">Гвозди 00000</h4>
+                                <!-- Важные х-ти товара для вывода -->
                                 <div>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</div>
+                                <!-- Цена -->
                                 <div class="uk-padding-small">0000₽</div>
                             </div>
                             <button class="uk-button uk-button-primary uk-border-rounded">Подробнее</button>
                         </div>
                     </div>
                 </a>
+                <!-- /Конец шаблона -->
                 <a href="item.html" class="uk-link-reset">
                     <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-small uk-text-center">
                         <div class="uk-card-media-top">

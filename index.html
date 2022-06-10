@@ -1,3 +1,5 @@
+<!-- Эта страница преоритетна для вывода одинаковых компонентов -->
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -7,12 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/css/uikit.min.css">
     <link href="assets/css/styles.css" rel="stylesheet">
-    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script> -->
 </head>
 
 <body>
 
+    <!-- Компонент шапки -->
     <header class="Header uk-container uk-container-expand uk-background-secondary">
         <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
             <div class="uk-navbar-left">
@@ -20,18 +21,9 @@
             </div>
             <div class="uk-navbar-right uk-visible@m">
                 <ul class="uk-navbar-nav">
+                    <!-- Это можно сделать статичными ссылками ввиде отдельного компонента шаблона -->
                     <li><a href="about.html">О нас</a></li>
-                    <li>
-                        <a href="#">Каталог</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="category.html">Категория</a></li>
-                                <li><a href="category.html">Категория</a></li>
-                                <li><a href="category.html">Категория</a></li>
-                                <li><a href="category.html">Категория</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
                     <li><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></li>
                 </ul>
@@ -47,23 +39,19 @@
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <!-- И использовать компонент ссылок меню тут -->
                 <li><a href="#">О нас</a></li>
-                <li class="uk-parent">
-                    <a href="#">Каталог</a>
-                    <ul class="uk-nav-sub">
-                        <li><a href="category.html">Категория</a></li>
-                        <li><a href="category.html">Категория</a></li>
-                        <li><a href="category.html">Категория</a></li>
-                        <li><a href="category.html">Категория</a></li>
-                    </ul>
-                </li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Контакты</a></li>
+                <!-- По сех пор -->
                 <div class="uk-h3 uk-margin-medium-top"><a href="tel:+7 000 000-00-00">+7 000 000-00-00</a></div>
             </ul>
 
         </div>
     </div>
+    <!-- /Компонент шапки -->
 
+    <!-- Остальное можно сделать отдельным шаблоном для главной страницы, размещая изображения и текст прям в шаблон -->
     <section class="uk-section uk-padding-remove-vertical">
         <div class="uk-container uk-container-expand-right">
             <div class="uk-grid-collapse uk-flex-middle" uk-grid>
@@ -85,6 +73,7 @@
         </div>
     </section>
 
+    <!-- Граммотно будет получить список категорий и их изображений и вывести тут. Для простоты вручную в шаблон -->
     <section class="uk-section">
         <div class="uk-container">
             <div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
@@ -152,6 +141,7 @@
                     гвозди VAPP - Вы работаете напрямую с производителем - получая лучшую стоимость с НДС, на расходные
                     материалы для монтажных пистолетов TOUA и HYBEST</span>
             </div>
+            <!-- Можно поставить пометку Избраное для товара, чтобы вывести по этому фильтру тут на главной, ограничинить 4-8-12 шт -->
             <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-row-large uk-margin-large-top" uk-grid
                 uk-height-match="target: > a > .uk-card > .uk-card-body > div">
                 <a href="item.html" class="uk-link-reset">
@@ -282,6 +272,7 @@
         </div>
     </section>
 
+    <!-- Компонентом шаблона, это можно продублировать на страницах категорий, чтобы пмочь с выбором -->
     <div class="uk-section uk-section-large">
         <div class="uk-container">
             <ul uk-accordion>
@@ -333,6 +324,7 @@
         </div>
     </div>
 
+    <!-- Компонент подвала -->
     <footer class="Footer uk-section uk-margin-large-top uk-background-secondary uk-light">
         <div class="uk-container uk-text-center">
             <div class="uk-h1 uk-margin-remove uk-text-uppercase">Название</div>
@@ -353,6 +345,7 @@
                     000-00-00</a></div>
         </div>
     </footer>
+    <!-- /Компонент подвала -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.3/js/uikit-icons.min.js"></script>

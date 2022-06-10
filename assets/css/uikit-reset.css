@@ -9,38 +9,41 @@
     font-weight: 700;
 }
 
-.uk-light .uk-navbar-nav>li>a {
-    color: white;
-}
-
-.uk-light .uk-navbar-nav>li:hover>a,
-.uk-navbar-dropdown-nav>li:hover>a {
-    color: var(--PrimaryColor);
-}
-
-.uk-navbar-dropdown {
-    color: black;
-    border-radius: 5px;
-}
-
-.uk-navbar-dropdown-nav>li>a {
-    color: black;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.uk-light .uk-navbar-toggle,
-.uk-offcanvas-bar .uk-close {
-    color: var(--PrimaryColor);
-}
-
+.uk-light .uk-navbar-nav>li>a,
 .uk-offcanvas-bar .uk-nav-primary>li>a,
 .uk-offcanvas-bar .uk-nav-primary .uk-nav-sub a {
     color: white;
 }
 
-.uk-offcanvas-bar a {
+.uk-light .uk-navbar-nav>li:hover>a,
+.uk-navbar-dropdown-nav>li:hover>a,
+.uk-light .uk-navbar-toggle,
+.uk-offcanvas-bar .uk-close,
+.uk-offcanvas-bar a,
+.uk-breadcrumb> :nth-child(n+2):not(.uk-first-column)::before,
+.uk-breadcrumb> :last-child>a:not([href]),
+.uk-breadcrumb> :last-child>span {
     color: var(--PrimaryColor);
+}
+
+.uk-navbar-dropdown,
+.uk-navbar-dropdown-nav>li>a,
+.uk-button-primary:hover,
+.uk-light .uk-subnav>*> :first-child,
+.uk-light .uk-subnav>*>a:hover,
+.uk-slidenav,
+.uk-slidenav:hover,
+.uk-text-lead {
+    color: black;
+}
+
+.uk-navbar-dropdown {
+    border-radius: 5px;
+}
+
+.uk-navbar-dropdown-nav>li>a {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .uk-button {
@@ -52,9 +55,9 @@
     border-color: var(--PrimaryColor);
 }
 
-.uk-button-primary:hover {
+.uk-button-primary:hover,
+.uk-light .uk-button-default {
     background-color: white;
-    color: black;
 }
 
 .uk-overlay-primary {
@@ -78,7 +81,6 @@
 }
 
 .uk-light .uk-button-default {
-    background-color: white;
     border-color: transparent;
     text-transform: lowercase;
     font-weight: 400;
@@ -89,31 +91,7 @@
     border-color: transparent;
 }
 
-.uk-light .uk-subnav>*> :first-child,
-.uk-light .uk-subnav>*>a:hover {
-    color: black;
-}
-
-.uk-breadcrumb> :nth-child(n+2):not(.uk-first-column)::before {
-    color: var(--PrimaryColor);
-}
-
-
-.uk-breadcrumb> :last-child>a:not([href]),
-.uk-breadcrumb> :last-child>span {
-    color: var(--PrimaryColor);
-}
-
 .uk-list>*>ul,
 .uk-list> :nth-child(n+2) {
     margin-top: 5px;
-}
-
-.uk-slidenav,
-.uk-slidenav:hover {
-    color: black;
-}
-
-.uk-text-lead {
-    color: black;
 }
